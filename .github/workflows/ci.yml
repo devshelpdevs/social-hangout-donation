@@ -1,0 +1,22 @@
+name: Deploy code to dev server for preview
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy_to_dev_server:
+    name: deploy website for preview
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: https://helpdevshangout-preview.herokuapp.com/
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.8.8
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_MAIL}}
+    
