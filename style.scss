@@ -9,6 +9,8 @@
     font-family: 'puntaLight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.4;
     letter-spacing: 0.015rem;
+    color: #111;
+    font-size: 1rem;
 }
 
 @font-face {
@@ -19,6 +21,7 @@
 body {
     width: 100%;
     height: 100%;
+    background-color: #FFFEFC;
 }
 
 // reusable class styles that can be applied to html elements
@@ -57,9 +60,16 @@ body {
     .hero-content {
         .left-hero-content {
             .hashTag {
+                display:flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 1rem 0;
                 .hashTag-text {
+                    padding: 0.5rem 2rem;
+                    border-radius: 50px;
                     font-style: italic;
                     font-weight: 300;
+                    background-color: tomato;
                 }
             }
             .hero-text-div {
@@ -71,7 +81,7 @@ body {
             .hero-copy {
                 margin: 1.5rem 0;
                 .copy {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                 }
             }
             .hero-ctas {
@@ -147,16 +157,18 @@ body {
     margin: 1rem 0;
     .goal-text {
         // text-align: center;
+        font-size: 1.1rem;
     }
 }
 
-.next-heading {
-    font-size: 1rem;
+.next-heading-main {
+    font-weight: 600;
+    font-size: 1.3rem;
     margin: 0.5rem 0;
 }
-// .next-heading-small {
-//     font-size: 1rem;
-// }
+.next-heading-small {
+    font-size: 1.1rem;
+}
 .analytics {
     margin: 1rem 0;
     .analytics-info {
@@ -167,12 +179,19 @@ body {
             justify-content: flex-start;
             // align-items: center;
             .analytics-count-item {
+                // border: 1px solid #111;
+                // padding: 0.4rem;
+                // border-radius: 4px;
                 width: 25%;
                 margin-right: 2rem;
                 .analytic-text {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                 }
             }
         }
     }
+}
+.plus {
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
