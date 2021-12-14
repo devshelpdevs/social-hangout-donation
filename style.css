@@ -7,6 +7,8 @@
   font-family: 'puntaLight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.4;
   letter-spacing: 0.015rem;
+  color: #111;
+  font-size: 1rem;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
 body {
   width: 100%;
   height: 100%;
+  background-color: #FFFEFC;
 }
 
 .content-container-m {
@@ -55,9 +58,25 @@ body {
   margin-right: 1rem;
 }
 
+.hero-container .hero-content .left-hero-content .hashTag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
 .hero-container .hero-content .left-hero-content .hashTag .hashTag-text {
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
   font-style: italic;
   font-weight: 300;
+  background-color: tomato;
 }
 
 .hero-container .hero-content .left-hero-content .hero-text-div .hero-text {
@@ -70,7 +89,7 @@ body {
 }
 
 .hero-container .hero-content .left-hero-content .hero-copy .copy {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .hero-container .hero-content .left-hero-content .hero-ctas {
@@ -157,9 +176,18 @@ body {
   margin: 1rem 0;
 }
 
-.next-heading {
-  font-size: 1rem;
+.goal .goal-text {
+  font-size: 1.1rem;
+}
+
+.next-heading-main {
+  font-weight: 600;
+  font-size: 1.3rem;
   margin: 0.5rem 0;
+}
+
+.next-heading-small {
+  font-size: 1.1rem;
 }
 
 .analytics {
@@ -183,6 +211,11 @@ body {
 }
 
 .analytics .analytics-info .analytics-count .analytics-count-item .analytic-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+
+.plus {
+  font-size: 1.5rem;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=style.css.map */
