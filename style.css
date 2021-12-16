@@ -248,10 +248,12 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     /* align-items: center; */
+    margin: 1rem 0;
   }
   .cta-donate {
     display: block;
     width: 100%;
+    margin: 0;
   }
   .cta-learnmore {
     display: block;
