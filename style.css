@@ -219,7 +219,7 @@ body {
 
 /* Footer, Footer cta */
 .footer-cta {
-  margin: 10% 0;
+  margin: 5% 0 2% 0;
 }
   .footer-cta-heading {
     font-weight: 500;
@@ -229,7 +229,7 @@ body {
   .footer-cta-text {
     font-size: 1.4rem;
     text-align: left;
-    margin: 2% 0 8% 0;
+    margin: 2% 0;
   }
   .footer-ctas {
     display: flex;
@@ -255,6 +255,10 @@ body {
 .footer-logo {
   margin-top: 5%;
 }
+.copyright {
+  margin-top: 2%;
+  font-size: 0.9rem;
+}
 
 /* media query */
 @media only screen and (max-width: 700px) {
@@ -274,6 +278,9 @@ body {
   }
   .footer-ctas {
     justify-content: left;
+  }
+  .footer-text {
+    margin: 4% 0 ;
   }
 
 }
