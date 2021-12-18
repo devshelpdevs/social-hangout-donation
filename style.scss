@@ -48,7 +48,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  flex: 1;
+//   flex: 1;
 }
 
 
@@ -212,6 +212,15 @@ body {
       padding: 0 5%;
   }
 
+  .header {
+      .header-content {
+          justify-content: flex-start;
+          flex-direction: column;
+          .logo-box {
+                margin-bottom: 2rem;
+          }
+      }
+  }
     .hero-text {
         font-weight: 500;
         font-size: 2rem;
