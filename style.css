@@ -6,8 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "puntaLight", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "puntaLight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.4;
   letter-spacing: 0.015rem;
   color: #acacac;
@@ -106,7 +105,7 @@ body {
 
 .cta-donate {
   text-align: center;
-  margin-right: 1rem;
+  margin-right: 2rem;
   width: 250px;
   border-radius: 4px;
   background-color: #115fa7;
@@ -202,7 +201,8 @@ body {
 
 .goal .goal-text {
   font-size: 1.1rem;
-  text-align: justify;
+  text-align: center;
+  color: #fff;
 }
 
 .next-heading-main {
@@ -211,6 +211,11 @@ body {
   margin: 2rem 0;
   text-align: center;
   color: #ffffff;
+}
+
+.intro-story {
+  color: #fff;
+  text-align: center;
 }
 
 .next-heading-small {
@@ -239,10 +244,10 @@ body {
 }
 
 .analytics
-  .analytics-info
-  .analytics-count
-  .analytics-count-item
-  .analytic-text {
+.analytics-info
+.analytics-count
+.analytics-count-item
+.analytic-text {
   font-size: 1.1rem;
   color: #ffffff;
 }
@@ -279,14 +284,16 @@ body {
   margin: 1rem 1rem 0 0;
   padding: 1rem 0.5rem;
 }
+
 a {
   color: #b38cfc;
 }
+
 .devshelpdevs-stories
-  .devs-stories-container
-  .story
-  .story-text
-  .story-text-content {
+.devs-stories-container
+.story
+.story-text
+.story-text-content {
   font-size: 1rem;
   color: #ffffff;
 }
@@ -306,10 +313,10 @@ a {
 }
 
 .devshelpdevs-stories
-  .devs-stories-container
-  .story
-  .user-info
-  .user-info-avatar {
+.devs-stories-container
+.story
+.user-info
+.user-info-avatar {
   width: 60px;
   height: 60px;
   margin-right: 1rem;
@@ -317,17 +324,17 @@ a {
 }
 
 .devshelpdevs-stories
-  .devs-stories-container
-  .story
-  .user-info
-  .user-info-avatar
-  picture,
+.devs-stories-container
+.story
+.user-info
+.user-info-avatar
+picture,
 .devshelpdevs-stories
-  .devs-stories-container
-  .story
-  .user-info
-  .user-info-avatar
-  img {
+.devs-stories-container
+.story
+.user-info
+.user-info-avatar
+img {
   width: 100%;
   height: 100%;
   border-radius: 7px;
@@ -416,11 +423,37 @@ a {
 .footer-container .footer-text {
   margin: 2rem 0;
   font-size: 1.1rem;
+}
+
+.footer-container .footer-ending {
+  width: 100%;
+}
+
+.footer-container .footer-ending .connect_means .social_connect .social_link {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.footer-container .footer-ending .connect_means .social_connect .social_link a img {
+  width: 25px;
+  height: 25px;
+}
+
+.footer-container .footer-ending .copyright {
+  font-size: 0.9rem;
+}
+
+/* media query */
+.footer-container .footer-text {
+  margin: 2rem 0;
+  font-size: 1.1rem;
   color: #ffffff;
 }
+
 .user-info {
   color: #ffffff;
 }
+
 .footer-container .footer-ending {
   width: 100%;
 }
@@ -459,90 +492,196 @@ a {
     margin: 2rem 0;
   }
   .copy {
+    color: #fff;
     font-size: 1.2rem;
   }
-
   .hero-ctas {
     display: -webkit-box;
     display: -ms-flexbox;
     display: list-item;
-    /* flex-direction: column; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     /* align-items: center; */
     margin: 1rem 0;
-    list-style: none;
-
     width: 100%;
-  }
-  .cta-donate {
-    display: block;
-    width: 100%;
-    margin-top: 1.2rem;
   }
   .cta-learnmore {
     display: block;
     width: 100%;
     margin-top: 1.2rem;
   }
-  .analytics .analytics-info .analytics-count {
-    display: list-item;
-    list-style: none;
+  .hero-text {
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .hero-copy {
+    margin: 2rem 0;
+  }
+  .copy {
+    font-size: 1.2rem;
+  }
+  .hero-ctas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* flex-direction: column; */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* align-items: center; */
+    margin: 1rem 0;
+  }
+  .cta-donate {
+    display: block;
     width: 100%;
-    justify-content: none;
+    margin: 0;
+  }
+  .cta-learnmore {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .sponsors-lists .sponsor-text {
+    text-align: center;
+  }
+  .sponsors-lists .sponsors-flex-row {
+    margin-top: 1rem;
+  }
+  .analytics .analytics-info .next-heading-small {
+    text-align: center;
+  }
+  .analytics .analytics-info .analytics-count {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .analytics .analytics-info .analytics-count .analytics-count-item {
     width: 100%;
-    margin-right: 0rem;
-  }
-  .analytics
-    .analytics-info
-    .analytics-count
-    .analytics-count-item
-    .analytic-text {
-    margin: 20px 0px;
-  }
-  .footer-cta {
-    margin: 0rem auto;
-    padding: 0rem 0 1rem 0;
-  }
-}
-
-@media only screen and (max-width: 959px) and (min-width: 451px) {
-  .header img {
-    width: 100%;
-  }
-  .hero-ctas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: list-item;
-    /* flex-direction: column; */
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    /* align-items: center; */
     margin: 1rem 0;
-    list-style: none;
-    width: 100%;
   }
-  .cta-donate {
-    display: block;
-    width: 100%;
-    margin-top: 1.2rem;
+  .analytics .more-data-info {
+    text-align: center;
   }
-  .cta-learnmore {
-    display: block;
-    width: 100%;
-    margin-top: 1.2rem;
+  .devshelpdevs-stories .devs-stories-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .devshelpdevs-stories .devs-stories-container .story {
     width: 100%;
-    margin: 1rem 0rem 0 0;
   }
-  .footer-cta {
-    margin: -5rem auto;
+  .footer-cta .footer-ctas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-cta .footer-ctas .footer-cta-donate {
+    width: 100%;
+    margin-right: 0;
+  }
+  .footer-cta .footer-ctas .footer-cta-donate a {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .footer-cta .footer-ctas .footer-cta-learnmore {
+    width: 100%;
+  }
+  .footer-cta .footer-ctas .footer-cta-learnmore a {
+    display: block;
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .header img {
+    width: 100%;
+  }
+  .cta-donate {
+    margin-right: 0.5rem;
+  }
+}
+
+.close_donation {
+  width: 25px;
+  height: 25px;
+}
+
+.donation_popup {
+  width: 100%;
+  height: 100vh;
+  line-height: 1.5;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  padding: 2rem 1rem;
+  overflow-y: scroll;
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.donation_popup .donation_heading {
+  color: black;
+}
+
+.donation_popup .payment_method_container {
+  width: 100%;
+}
+
+.donation_popup .payment_method_container .method {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.donation_popup .payment_method_container .method .method_name {
+  color: black;
+}
+
+.donation_popup .payment_method_container .method .method_info {
+  color: black;
+}
+
+.donation_popup .payment_method_container .method form .cryptocurrencys .crypto_lists .crypto label {
+  color: black;
+}
+
+.donation_popup .payment_method_container .method .generating_indicator .generatenotify {
+  color: black;
+  margin: 0.2rem 0;
+  display: none;
+}
+
+.donation_popup .payment_method_container .method .account-copy .account-number {
+  pointer-events: none;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  border: none;
+  margin-right: 0.3rem;
+  margin-top: 0.7rem;
+  outline: none;
+}
+
+.donation_popup .payment_method_container .method .account-naira-display .bank-name {
+  color: black;
+}
+
+.donation_popup .payment_method_container .method .account-naira-display .account-name {
+  color: black;
+}
+
+.donation_popup .payment_method_container .method .account-naira-display .account-copy .account-number {
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */
