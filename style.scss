@@ -87,7 +87,7 @@ body {
  .cta-donate {
 
   text-align: center;
-  margin-right: 1rem;
+  margin-right: 2rem;
   width: 250px;
 }
 
@@ -326,6 +326,22 @@ body {
   }
   .footer-ending {
     width: 100%;
+  
+    .connect_means {
+      .social_connect {
+        // list-style-type: none;
+        .social_link {
+          display: inline-block;
+          margin-right: 0.7rem;
+          a {
+            img {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
     .copyright {
       font-size: 0.9rem;
     }
@@ -333,7 +349,7 @@ body {
 }
 
 /* media query */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 520px) {
   .content-container {
       padding: 0 5%;
   }
@@ -376,7 +392,62 @@ body {
     .cta-learnmore {
         display: block;
         width: 100%;
-        margin-top: 1.2rem;
+        margin-top: 2rem;
+    }
+    .sponsors-lists {
+      .sponsor-text {
+        text-align: center;
+      }
+      .sponsors-flex-row {
+        margin-top: 1rem;
+      }
+    }
+    .analytics {
+      .analytics-info {
+        .next-heading-small {
+          text-align: center;
+        }
+        .analytics-count {
+          width: 100%;
+          flex-direction: column;
+          .analytics-count-item {
+            width: 100%;
+            margin: 1rem 0;
+          }
+        }
+      }
+      .more-data-info {
+        text-align: center;
+      }
+    }
+
+    .devshelpdevs-stories {
+      .devs-stories-container {
+        flex-direction: column;
+        .story {
+          width: 100%;
+        }
+      }
+    }
+
+    .footer-cta {
+      .footer-ctas {
+        flex-direction: column;
+        .footer-cta-donate {
+          width: 100%;
+          margin-right: 0;
+          a {
+            display: block;
+            margin-bottom: 2rem;
+          }
+        }
+        .footer-cta-learnmore {
+          width: 100%;
+          a {
+            display: block;
+          }
+        }
+      }
     }
 }
 
@@ -390,5 +461,94 @@ body {
     /* justify-content: center; */
     align-items: center;
   
+  }
+}
+
+.close_donation {
+  width: 25px;
+  height: 25px;
+}
+
+
+// mobile first layout for the donation popup
+
+.donation_popup {
+  width: 100%;
+  height: 100vh;
+  line-height: 1.5;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  padding: 2rem 1rem;
+  overflow-y: scroll;
+  display: none;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  .donation_heading {
+    color: black;
+  }
+  .payment_method_container {
+    width: 100%;
+    .method {
+      width: 100%;
+      margin: 2rem 0;
+      .method_name {
+        color:black;
+      }
+      .method_info {
+        color: black;
+      }
+      form {
+        .cryptocurrencys {
+          .crypto_lists {
+            .crypto {
+              label {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+      .generating_indicator {
+        .generatenotify {
+          color: black;
+          margin: 0.2rem 0;
+          display: none;
+        }
+      }
+      .account-copy {
+        .account-number {
+          pointer-events: none;
+          color: black;
+          background-color: rgba(0,0,0, 0.1);
+          padding: 0.5rem;
+          border: none;
+          margin-right: 0.3rem;
+          margin-top: 0.7rem;
+          outline: none;
+        }
+        .copy-icon {
+
+        }
+      }
+      .account-naira-display {
+        .bank-name {
+          color: black;
+        }
+        .account-name {
+          color: black;
+        }
+        .account-copy {
+        .account-number {
+          color: black;
+        }
+        .copy-icon {
+          
+        }
+      }
+      }
+    }
   }
 }
