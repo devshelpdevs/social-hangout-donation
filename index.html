@@ -94,20 +94,26 @@
             </div>
             <!-- sponsors lists -->
             <div class="sponsors-lists">
-              <span class="sponsor-text">Proudly supported by</span>
+              <span class="sponsor-text">Official sponsor of #helpdevsConnect</span>
               <div class="sponsors-flex-row">
                 <div class="sponsor">
-                  <img
+                  <!-- <img
                     src="/full-logo-dark.svg"
                     alt="netlify"
                     class="sponsor-icon"
-                  />
-                  <img
+                  /> -->
+                  <picture>
+                    <source srcset="/flywallet_logo.webp" type="image/webp">
+                    <source srcset="/flywallet_logo.png" type="image/jpeg">
+                    <img src="/flywallet_logo.png" alt="flywallet logo" width="300" height="96"
+                      loading="lazy" class="sponsor-icon">
+                  </picture>
+                  <!-- <img
                     src="/flywallet_logo.png"
                     alt="fly wallet"
                     class="sponsor-icon"
-                  />
-                  <img
+                  /> -->
+                  <!-- <img
                     src="/nhost-logo-dark.svg"
                     alt="nhost"
                     class="sponsor-icon"
@@ -121,7 +127,7 @@
                     src="/logo-hosting-white-text.png"
                     alt="netlify"
                     class="sponsor-icon"
-                  />
+                  /> -->
                 </div>
               </div>
             </div>
@@ -178,7 +184,7 @@
           </div>
         </div>
         <div class="more-data-info">
-          <a href="" class="see-full-data">See the complete data</a>
+          <a href="https://helpdevs-tracker.netlify.app/used" class="see-full-data">See the complete data</a>
         </div>
       </div>
     </section>
@@ -188,28 +194,28 @@
       <div class="content-container">
         <!-- content goes here -->
         <p class="next-heading-main">Devshelpdevs stories</p>
-        <p class="intro-story">Hear from the devs who have been supported by devshelpdevs:</p>
+        <p class="intro-story">Hear from few of the devs who have been supported by devshelpdevs:</p>
         <div class="devs-stories-container">
           <!-- story 1 -->
           <div class="story">
             <div class="story-text">
               <p class="story-text-content">
-                "I have been working on a project for a long time and I have
-                been using the tools provided by devshelpdevs. I am very
-                grateful to devshelpdevs for their support."
+                "Ever since I received the tools provided by devshelpdevs, I have been more
+                productive and my growth has been super awesome. Thanks to the devhelpdevs
+                community."
               </p>
             </div>
             <div class="user-info">
               <div class="user-info-avatar">
                 <picture>
-                  <source srcset="/avatarsketch.webp" type="image/webp">
-                  <source srcset="/avatarsketch.jpg" type="image/jpeg">
-                  <img src="/avatarsketch.jpg" alt="ogunsola usman" width="300" height="96" loading="lazy" class="avatar">
+                  <source srcset="/vicdhd.webp" type="image/webp">
+                  <source srcset="/vicdhd.jpg" type="image/jpeg">
+                  <img src="/vicdhd.jpg" alt="Olorunfemi Victor" width="300" height="96" loading="lazy" class="avatar">
                   </picture>
               </div>
               <div class="user-info-details">
-                <p class="fullname">Tobi Ajibade</p>
-                <p class="job_title">Software Engineer</p>
+                <p class="fullname">Olorunfemi Victor</p>
+                <p class="job_title">Frontend developer</p>
               </div>
             </div>
           </div>
@@ -272,7 +278,7 @@
     <section class="footer-cta">
       <div class="content-container">
         <div class="footer-cta-text-container">
-          <p class="next-heading-main">Support devshelpdevs today</p>
+          <p class="next-heading-main footer-cta-heading">Support devshelpdevs today</p>
           <p class="footer-cta-text">
             Join a collection of kindhearted donors putting smiles on devs' faces and making
             the lives of devs successful ones.
@@ -280,9 +286,12 @@
         </div>
 
         <div class="footer-ctas">
-          <div class="footer-cta-donate">
-            <a href="">Donate now &rightarrow;</a>
-          </div>
+            <div class="footer-cta-donate">
+              <a href="">Donate now &rightarrow;</a>
+            </div>
+            <div class="footer-cta-learnmore">
+              <a href="">Learn more &rightarrow;</a>
+            </div>
         </div>
       </div>
     </section>
@@ -291,11 +300,12 @@
     <section class="footer-container">
       <div class="content-container">
         <p class="footer-text">
-          For enquiries of devshelpdevs, shoot us an email at -:
+          For enquiries of devshelpdevs, send us an email at
           <a href="mailto:mail@devshelpdevs.org">mail@devshelpdevs.org</a>.
         </p>
-
-        <p class="copyright">&#9400; 2021 devshelpdevs</p>
+        <div class="footer-ending">
+          <p class="copyright">&#9400; 2021 Devshelpdevs</p>
+        </div>
       </div>
     </section>
   </body>

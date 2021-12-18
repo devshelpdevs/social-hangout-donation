@@ -88,10 +88,11 @@ body {
 
   text-align: center;
   margin-right: 1rem;
-
+  width: 250px;
 }
 
  .cta-donate a {
+   width: 100%;
   text-decoration: none;
   display: block;
   color: #fff;
@@ -103,11 +104,11 @@ body {
 
  .cta-learnmore {
   text-align: center;
- 
+  width: 250px;
 }
 
  .cta-learnmore a {
-  /* width: 180px; */
+  width: 100%;
   text-decoration: none;
   display: block;
   color: #B38CFC;
@@ -118,8 +119,10 @@ body {
 }
 .sponsors-lists{
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2rem 0;
 }
  .sponsor-text {
   text-transform: uppercase;
@@ -170,7 +173,8 @@ body {
 .next-heading-main {
   font-weight: 600;
   font-size: 1.3rem;
-  margin: 0.5rem 0;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .next-heading-small {
@@ -252,6 +256,78 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+.footer-cta {
+  width: 80%;
+  height: auto;
+  margin: 2rem auto;
+  background-color: #14142bbf;
+  padding: 2rem 0 5rem 0;
+  .footer-cta-text-container {
+    width: 100%;
+    height: auto;
+    .footer-cta-heading {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .footer-cta-text {
+      font-size: 1.1rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+  }
+  .footer-ctas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-cta-donate {
+      width: 250px;
+      margin-right: 2rem;
+      text-align: center;
+      a {
+        width: 100%;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        background-color: #115FA7;
+        font-size: 0.9rem;
+        padding: 0.9rem 3rem;
+        border-radius: 1px;
+      }
+    }
+    .footer-cta-learnmore {
+      width: 250px;
+      text-align: center;
+      a {
+        width: 100%;
+        text-decoration: none;
+        display: block;
+        color: #B38CFC;
+        border: 1px solid #B38CFC;
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+        border-radius: 1px;
+      }
+    }
+  }
+}
+
+.footer-container {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  .footer-text {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+  }
+  .footer-ending {
+    width: 100%;
+    .copyright {
+      font-size: 0.9rem;
     }
   }
 }

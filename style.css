@@ -96,9 +96,11 @@ body {
 .cta-donate {
   text-align: center;
   margin-right: 1rem;
+  width: 250px;
 }
 
 .cta-donate a {
+  width: 100%;
   text-decoration: none;
   display: block;
   color: #fff;
@@ -110,10 +112,11 @@ body {
 
 .cta-learnmore {
   text-align: center;
+  width: 250px;
 }
 
 .cta-learnmore a {
-  /* width: 180px; */
+  width: 100%;
   text-decoration: none;
   display: block;
   color: #B38CFC;
@@ -127,12 +130,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 2rem 0;
 }
 
 .sponsor-text {
@@ -184,7 +192,8 @@ body {
 .next-heading-main {
   font-weight: 600;
   font-size: 1.3rem;
-  margin: 0.5rem 0;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .next-heading-small {
@@ -279,6 +288,95 @@ body {
   border-radius: 7px;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.footer-cta {
+  width: 80%;
+  height: auto;
+  margin: 2rem auto;
+  background-color: #14142bbf;
+  padding: 2rem 0 5rem 0;
+}
+
+.footer-cta .footer-cta-text-container {
+  width: 100%;
+  height: auto;
+}
+
+.footer-cta .footer-cta-text-container .footer-cta-heading {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.footer-cta .footer-cta-text-container .footer-cta-text {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.footer-cta .footer-ctas {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-cta .footer-ctas .footer-cta-donate {
+  width: 250px;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.footer-cta .footer-ctas .footer-cta-donate a {
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  background-color: #115FA7;
+  font-size: 0.9rem;
+  padding: 0.9rem 3rem;
+  border-radius: 1px;
+}
+
+.footer-cta .footer-ctas .footer-cta-learnmore {
+  width: 250px;
+  text-align: center;
+}
+
+.footer-cta .footer-ctas .footer-cta-learnmore a {
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  color: #B38CFC;
+  border: 1px solid #B38CFC;
+  font-size: 0.9rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1px;
+}
+
+.footer-container {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.footer-container .footer-text {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.footer-container .footer-ending {
+  width: 100%;
+}
+
+.footer-container .footer-ending .copyright {
+  font-size: 0.9rem;
 }
 
 /* media query */
